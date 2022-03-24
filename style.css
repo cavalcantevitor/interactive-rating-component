@@ -1,0 +1,170 @@
+:root {
+  /* ---------- COLORS ---------- */
+
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 20%, 18%);
+  --dark-blue-shade: hsl(210, 14%, 23%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+
+  /* ---------- TYPOGRAPHY ---------- */
+
+  --font: "Overpass", sans-serif;
+  --regular: 400;
+  --bold: 700;
+  --size: 15px;
+
+  /* ---------- XX ---------- */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--very-dark-blue);
+  font-family: var(--font);
+  font-size: var(--size);
+  color: var(--white);
+}
+
+/* ---------- CONTAINER ---------- */
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- CARD ---------- */
+
+.card {
+  background-color: var(--dark-blue);
+  width: min(25rem, 90%);
+  border-radius: 1.5rem;
+}
+
+.feedback {
+  text-align: center;
+  transform: scale(0);
+  opacity: 0;
+  animation: fadeIn 500ms ease forwards;
+  animation-delay: 100ms;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ---------- TEXT & IMG ---------- */
+
+.star-icon {
+  margin: 1.75rem 0 0 0;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--dark-blue-shade);
+  transition: ease 0.2s;
+}
+
+/* .star-icon:hover {
+  background-color: var(--light-grey);
+} */
+
+.thank-you-img {
+  margin: 1.75rem 0;
+}
+
+.text {
+  padding: 0 1.75rem;
+}
+
+.paragraph {
+  margin: 0;
+  color: var(--light-grey);
+}
+
+.feedback-paragraph {
+  margin: 0 0 2.25rem;
+  color: var(--light-grey);
+}
+
+.rating-text {
+  color: var(--orange);
+  background-color: var(--dark-blue-shade);
+  display: inline-block;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.buttons {
+  text-align: center;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.75rem 1.75rem;
+}
+
+.rating-btn {
+  border: none;
+  background-color: var(--dark-blue-shade);
+  color: var(--medium-grey);
+  font-size: 1rem;
+  font-weight: 500;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  gap: 1rem;
+  cursor: pointer;
+  transition: ease 0.2s;
+}
+
+.rating-btn:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.active {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.submit-btn {
+  margin: 0 auto 1.75rem;
+  color: var(--white);
+  display: block;
+  width: calc(100% - 3.5rem);
+  padding: 1rem 2rem;
+  background-color: var(--orange);
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.125rem;
+  cursor: pointer;
+  transition: ease 0.2s;
+}
+
+.submit-btn:hover {
+  color: var(--orange);
+  background-color: var(--white);
+}
+
+/* ---------- FEEDBACK CARD ANIMATION ---------- */
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
