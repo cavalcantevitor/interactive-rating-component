@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/faq-accordion-card-oon2HvFjT](https://www.frontendmentor.io/solutions/faq-accordion-card-oon2HvFjT)
-- Live Site URL: [https://vitoralves2c.github.io/FAQ-Accordion-Card/](https://vitoralves2c.github.io/FAQ-Accordion-Card/)
+- Solution URL: [https://www.frontendmentor.io/solutions/interactive-rating-component-r1r4Ft5G5](https://www.frontendmentor.io/solutions/interactive-rating-component-r1r4Ft5G5)
+- Live Site URL: [https://vitoralves2c.github.io/interactive-rating-component/](https://vitoralves2c.github.io/interactive-rating-component/)
 
 
 ## My process
@@ -48,6 +48,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- Javascript
 
 
 ### Useful resources
